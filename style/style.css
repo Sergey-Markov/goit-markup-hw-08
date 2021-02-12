@@ -641,23 +641,40 @@ background: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
   color: var(--white-text);
 }
-.feedback-email {
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-email-input {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: var(--normal-weight);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
-.feedback-email-btn {
 
-  margin-left: 12px;
+.feedback-email-btn {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  padding-right: 28px;
+  padding-right: 23px;
   
   width: 200px;
   height: 50px;
@@ -672,8 +689,6 @@ color: rgba(255, 255, 255, 0.6);
   background-color: var(--button-bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
-  text-align: center;
 }
 .feedback-email-btn::after {
   display: inline-block;
@@ -685,9 +700,6 @@ color: rgba(255, 255, 255, 0.6);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
-  
- 
-
 }
 
 /* ============================================Portfolio ========================================*/
@@ -881,6 +893,8 @@ color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
+
 
 .is-hidden {
   visibility: hidden;
