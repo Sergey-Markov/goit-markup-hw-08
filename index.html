@@ -435,31 +435,60 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="closes-btn" data-modal-close>
-                <svg class="close-cross" width="11px" height="11px">
+                <svg class="close-btn" width="11px" height="11px">
                     <use href="./images/sprite-opt.svg#icon-cross"></use>
                 </svg>
             </button>
 
             <form>
-                <label class="">
-                    <input type="text" name="user-name" class="">
-                </label>
-                <label class="">
-                    <input type="tel" class="" name="tel">
-                </label>
-                <label for="" class="">
-                    <input type="email" class="" name="email">
-                </label>
-                <label class="">
-                    <textarea name="" id="" ></textarea>
-                </label>
+                <div class="form-field">
+                    <b class="form-field-text">Оставьте свои данные, мы вам перезвоним</b>
+                    <label class="user-name-label">
+                        <span class="forms-name">Имя</span>
+                        <span class="user-field">
+                            <input type="text" name="user-name" class="user-input" required>
+                            <svg class="user-svg" width="18px" height="18px">
+                                <use href="./images/sprite-opt.svg#icon-person-black"></use>
+                            </svg>
+                        </span>
+                    </label>
 
-                <input type="checkbox" name="" id="">
-                <label for="">
-                    <a href=""></a>
-                </label>
+                    <label class="user-tel-label">
+                        <span class="forms-name">Телефон</span>
+                        <span class="user-field">
+                            <input type="tel" name="user-tel" class="user-input" required>
+                            <svg class="user-svg" width="18px" height="18px">
+                                <use href="./images/sprite-opt.svg#icon-phone-black"></use>
+                            </svg>
+                        </span>
+                    </label>
 
-                <button type="submit">Отправить</button>
+                    <label class="user-tel-label">
+                        <span class="forms-name">Почта</span>
+                        <span class="user-field">
+                            <input type="tel" name="user-tel" class="user-input" required>
+                            <svg class="user-svg" width="18px" height="18px">
+                                <use href="./images/sprite-opt.svg#icon-email-black"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+
+                    <label class="commentstext-label">
+                        <span class="forms-name">Комментарий</span>
+                        <textarea class="commentstext-input" name="users-comment" placeholder="Введите текст"></textarea>
+                    </label>
+                    
+                    <div class="checkbox-agreement">
+                        <input type="checkbox" name="user-agreement" value="agree" id="user-agreement">
+                        <label for="user-agreement">
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="forms-agreement-link" href="#">Условия договора</a>
+                        </label>
+                    </div>
+                    
+                    <button class="forms-btn-submit"  type="submit">Отправить</button>
+                </div>
                 
             </form>
         </div>
