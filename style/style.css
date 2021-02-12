@@ -651,6 +651,45 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
+.feedback-email-btn {
+
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  
+  width: 200px;
+  height: 50px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: var(--bold-weight);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  background-color: var(--button-bgc);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  text-align: center;
+}
+.feedback-email-btn::after {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  background-size: contain;
+  content: "";
+  background-image: url(../images/svg/telegram.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  
+ 
+
+}
+
 /* ============================================Portfolio ========================================*/
 
 /* ===========================filters=========================== */
