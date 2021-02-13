@@ -435,7 +435,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="closes-btn" data-modal-close>
-                <svg class="close-btn" width="11px" height="11px">
+                <svg class="close-btn-svg" width="11px" height="11px">
                     <use href="./images/sprite-opt.svg#icon-cross"></use>
                 </svg>
             </button>
@@ -479,13 +479,13 @@
                         <textarea class="commentstext-input" name="users-comment" placeholder="Введите текст"></textarea>
                     </label>
                     
-                    <div class="checkbox-agreement">
-                        <input type="checkbox" name="user-agreement" value="agree" id="user-agreement">
-                        <label for="user-agreement">
+                    
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="user-agreement" value="agree" id="user-agreement">
+                    <label class="checkbox-label" for="user-agreement">
                             Соглашаюсь с рассылкой и принимаю
                             <a class="forms-agreement-link" href="#">Условия договора</a>
-                        </label>
-                    </div>
+                    </label>
+                    
                     
                     <button class="forms-btn-submit"  type="submit">Отправить</button>
                 </div>
