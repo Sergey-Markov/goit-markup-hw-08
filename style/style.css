@@ -667,14 +667,23 @@ background: rgba(47, 48, 58, 0.8);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.feedback-email-input:focus,
+.feedback-email-input:hover {
+  border: 1px solid var(--accent-color);
+  outline: transparent;
 }
 
 
 .feedback-email-btn {
+  display: flex;
+  justify-content: space-between;
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  padding-right: 23px;
+  padding-right: 28px;
   
   width: 200px;
   height: 50px;
@@ -689,18 +698,15 @@ background: rgba(47, 48, 58, 0.8);
   background-color: var(--button-bgc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  
+  cursor: pointer;
 }
-.feedback-email-btn::after {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  background-size: contain;
-  content: "";
-  background-image: url(../images/svg/telegram.svg);
-  background-repeat: no-repeat;
+.feedback-icon {
+  align-self: center;
   width: 24px;
   height: 24px;
 }
+
 
 /* ============================================Portfolio ========================================*/
 
@@ -897,6 +903,8 @@ background: rgba(47, 48, 58, 0.8);
   background-color: var(--main-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .closes-btn:hover,
 .closes-btn:focus {
@@ -942,6 +950,8 @@ background: rgba(47, 48, 58, 0.8);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-input:focus,
@@ -954,6 +964,7 @@ background: rgba(47, 48, 58, 0.8);
   position: absolute;
   top: 0;
   left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-input:focus + .user-svg,
 .user-input:hover + .user-svg {
@@ -971,6 +982,8 @@ background: rgba(47, 48, 58, 0.8);
   box-sizing: border-box;
   border-radius: 4px;
   outline: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .commentstext-input:hover,
 .commentstext-input:focus {
@@ -1042,10 +1055,11 @@ background: rgba(47, 48, 58, 0.8);
   background: transparent;  
 }
 .checkbox-input:checked + .checkbox-label::before {
-  background:  var(--accent-color) url(../images/svg/checked.svg);
+  background:  var(--accent-color) url(../images/svg/checked-vector.svg);
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px solid transparent;
+
 }
 .checkbox-input:focus + .checkbox-label::before {
   border: 1px solid var(--accent-color);
