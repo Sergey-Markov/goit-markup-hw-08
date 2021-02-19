@@ -1,0 +1,22 @@
+//утилиты
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//Базовые сбросы
+@import "./base/common";
+@import "./base/container";
+
+//компоненты
+@import "./components/current-page";
+@import "./components/logo";
+@import "./components/sociallink-icons";
+
+//Layout, макет
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/specificatins";
+@import "./layout/workspace";
+@import "./layout/ourcomand";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/modal-window";
