@@ -84,7 +84,7 @@
   letter-spacing: 0.01em;
   color: var(--gray-text);
 }
-.form-field__name {
+.form-field__input {
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -110,13 +110,13 @@
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .form-field__name:focus + &,
-  .form-field__name:hover + & {
+  .form-field__input:focus + &,
+  .form-field__input:hover + & {
     fill: var(--accent-color);
   }
 }
 
-.commentstext-input {
+.form-field__comments-input {
   resize: none;
   width: 448px;
   height: 120px;

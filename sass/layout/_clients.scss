@@ -3,21 +3,39 @@
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.client__title {
-  font-style: normal;
-  font-weight: var(--bold-weight);
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.client__list {
-  display: flex;
-}
-.client__list-items:not(:last-child) {
-  margin-right: 30px;
+  &__title {
+    font-style: normal;
+    font-weight: var(--bold-weight);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__list-items:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      border: 1px solid var(--accent-color);
+    }
+  }
 }
 
 /*===================clients list===============*/
@@ -56,24 +74,5 @@
   .client__link:focus &,
   .client__link:hover & {
     fill: var(--accent-color);
-  }
-}
-
-.client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
-    border: 1px solid var(--accent-color);
   }
 }

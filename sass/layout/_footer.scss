@@ -7,31 +7,30 @@
   margin-left: 0;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer--double-box {
-  display: flex;
-  align-items: baseline;
-}
+  &--double-box {
+    display: flex;
+    align-items: baseline;
+  }
+  &__address {
+    color: var(--white-text);
+    font-style: normal;
+    font-weight: var(--normal-weight);
+    font-size: 14px;
 
-.footer__address {
-  color: var(--white-text);
-  font-style: normal;
-  font-weight: var(--normal-weight);
-  font-size: 14px;
+    margin-bottom: 9px;
+  }
+  &__contact {
+    display: inline-block;
+    color: var(--footer-contact-bgc);
+    text-decoration: none;
 
-  margin-bottom: 9px;
-}
-.footer__contact {
-  display: inline-block;
-  color: var(--footer-contact-bgc);
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: var(--normal-weight);
-  font-size: 14px;
-}
-.footer__contact--mail {
-  margin-bottom: 9px;
+    font-style: normal;
+    font-weight: var(--normal-weight);
+    font-size: 14px;
+  }
+  &__contact--mail {
+    margin-bottom: 9px;
+  }
 }
 
 .conection__box {
