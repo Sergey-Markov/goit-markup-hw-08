@@ -264,15 +264,7 @@ body {
   margin-bottom: 302px;
 }
 
-.mobile-menu__contact:first-child {
-  margin-bottom: 32px;
-}
-
-.mobile-menu__contact:last-child {
-  margin-bottom: 64px;
-}
-
-.mobile-menu__contact-link {
+.mobile-menu__contact-tel {
   color: var(--accent-color);
   text-decoration: none;
   font-size: 34px;
@@ -280,12 +272,21 @@ body {
   letter-spacing: 0.02em;
 }
 
-.mobile-menu__contact-link--mail {
+.mobile-menu__contact-mail {
+  display: block;
   text-decoration: none;
   color: var(--gray-text);
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+}
+
+.mobile-menu__contact-items:first-child {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contact-items:last-child {
+  margin-bottom: 64px;
 }
 
 .current {
