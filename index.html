@@ -32,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="navigation__button" type="button">
+            <button class="navigation__button" type="button" data-menu-button >
                     <svg class="navigation__button-svg">
                         <use href="./images/sprite-opt.svg#icon-menu-buterbrod"></use>
                     </svg>
@@ -56,21 +56,30 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu">
-            <ul class="mobile-menu__navigation">
-                <li class="mobile-menu__navigation-link">
+        <div class="mobile-menu " data-menu>
+            <button class="mobile-menu__btn" type="button" data-menu-close >
+                <svg class="mobile-menu__btn-svg">
+                    <use href="./images/sprite-opt.svg#icon-close-mob-menu-btn"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu__navigation list">
+                <li class="mobile-menu__navigation-items">
                     <a href="" class="mobile-menu__navigation-link current">
                         Студия
                     </a>
                 </li>
-                <li class="mobile-menu__navigation-link">
-                    Портфолио
+                <li class="mobile-menu__navigation-items">
+                    <a href="" class="mobile-menu__navigation-link ">
+                        Портфолио
+                    </a>
                 </li>
-                <li class="mobile-menu__navigation-link">
-                    Контакты
+                <li class="mobile-menu__navigation-items">
+                    <a href="" class="mobile-menu__navigation-link ">
+                        Контакты
+                    </a>           
                 </li>
             </ul>
-            <ul class="mobile-menu__contact">
+            <ul class="mobile-menu__contact list">
                 <li class="mobile-menu__contact-items " lang="en">
                     <a class="mobile-menu__contact-tel " href="tel:+380961111111">
                         +38 096 111 11 11
@@ -83,7 +92,20 @@
                     </a>
                 </li>
             </ul>
-            <ul class="mobile-menu__soclink"></ul>
+            <ul class="mobile-menu__soclist list">
+                <li class="mobile-menu__soclist-items"><a href="" class="mobile-menu__soclink" lang="en">
+                    Instagram
+                </a></li>
+                <li class="mobile-menu__soclist-items"><a href="" class="mobile-menu__soclink" lang="en">
+                    Twitter
+                </a></li>
+                <li class="mobile-menu__soclist-items"><a href="" class="mobile-menu__soclink" lang="en">
+                    Facebook
+                </a></li>
+                <li class="mobile-menu__soclist-items"><a href="" class="mobile-menu__soclink" lang="en">
+                    LinkedIn
+                </a></li>
+            </ul>
 
         </div>
     </header>
@@ -534,5 +556,6 @@
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
