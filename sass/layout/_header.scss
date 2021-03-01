@@ -1,216 +1,291 @@
+.navigation__list {
+  display: none;
+}
+.contact {
+  display: none;
+}
 .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-height: 60px;
-}
-@media screen and (max-width: 480px) {
-  .top {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .navigation__list {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .top {
-    display: flex;
-    max-height: 80px;
-  }
-  .border-top {
-    border-bottom: 1px solid #ececec;
-    border-bottom-width: 100%;
-  }
-  .navigation,
-  .navigation__list {
-    display: flex;
-  }
-
-  /* навигация по сайту */
-  .navigation__items {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    .navigation__list &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-
-  .navigation__link {
-    color: var(--main-color);
-    text-decoration: none;
-
-    font-weight: var(--link-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    padding-bottom: 32px;
-    padding-top: 32px;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .navigation &:hover,
-    .navigation &:focus {
-      color: var(--accent-color);
-    }
-  }
-
-  /* контактная информация хедер*/
-
-  .contact {
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-    & .contact__link:hover,
-    & .contact__link:focus {
-      color: var(--accent-color);
-    }
-    .top &:last-child {
-      margin-left: auto;
-    }
-  }
-  .contact__items:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .contact__link {
-    display: flex;
-    align-items: center;
-    color: var(--gray-text);
-    text-decoration: none;
-
-    font-weight: var(--link-weight);
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icon-head-mail {
-    width: 14px;
-    height: 10px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
-
-  .icon-head-tel {
-    width: 10px;
-    height: 14px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-@media screen and (min-width: 769px) {
-  .top {
-    display: flex;
-    max-height: 80px;
-
-    & .contact:last-child {
-      margin-left: auto;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+.navigation__button {
+  padding: 12px 8px;
+  background-color: transparent;
+  border-color: transparent;
+  fill: var(--black-color-logo);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
   }
-  .border-top {
-    border-bottom: 1px solid #ececec;
-    border-bottom-width: 100%;
-  }
-  .navigation {
-    display: flex;
-  }
-  .navigation__list {
-    display: flex;
-  }
-
-  /* навигация по сайту */
-  .navigation__items {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    .navigation__list &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-
-  .navigation__link {
-    color: var(--main-color);
-    text-decoration: none;
-
-    font-weight: var(--link-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    padding-bottom: 32px;
-    padding-top: 32px;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .navigation &:hover,
-    .navigation &:focus {
-      color: var(--accent-color);
-    }
-  }
-
-  /* контактная информация хедер*/
-
-  .contact {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    & .contact__items:not(:last-child) {
-      margin-right: 45px;
-    }
-    & .contact__link:hover,
-    & .contact__link:focus {
-      color: var(--accent-color);
-    }
-  }
-
-  .contact__link {
-    display: flex;
-    align-items: center;
-    color: var(--gray-text);
-    text-decoration: none;
-
-    font-weight: var(--link-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icon-head-mail {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
-
-  .icon-head-tel {
-    width: 10px;
+  .navigation__button-svg {
+    width: 24px;
     height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
   }
 }
+.mobile-menu__navigation-link {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: var(--link-weight);
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &:last-child {
+    margin-bottom: 302px;
+  }
+}
+// .mobile-menu__contact {
+//   &:first-child {
+
+//   }
+//   &:last-child {
+
+//   }
+
+.mobile-menu__contact-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+.mobile-menu__contact-link--mail {
+  display: block;
+  text-decoration: none;
+  color: var(--gray-text);
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+.current {
+  color: var(--accent-color);
+}
+// }
+// @media screen and (min-width: 768px) {
+//   .top {
+//     display: flex;
+//     align-items: column;
+//   }
+//   .border-top {
+//     border-bottom: 1px solid #ececec;
+//     border-bottom-width: 100%;
+//   }
+
+//   .navigation__list {
+//     display: flex;
+//   }
+//   .navigation {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+//     max-height: 80px;
+//     padding-top: 26px;
+//     padding-bottom: 26px;
+//   }
+//   /* навигация по сайту */
+//   .navigation__link--menu {
+//     display: none;
+//   }
+//   .navigation__items {
+//     position: relative;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     .navigation__list &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+
+//   .navigation__link {
+//     color: var(--main-color);
+//     text-decoration: none;
+
+//     font-weight: var(--link-weight);
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     padding-bottom: 32px;
+//     padding-top: 32px;
+
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     .navigation &:hover,
+//     .navigation &:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+
+//   /* контактная информация хедер*/
+
+//   .contact {
+//     padding-top: 21px;
+//     padding-bottom: 21px;
+
+//     & .contact__link:hover,
+//     & .contact__link:focus {
+//       color: var(--accent-color);
+//     }
+//     .top &:last-child {
+//       margin-left: auto;
+//     }
+//   }
+//   .contact__items:not(:last-child) {
+//     margin-bottom: 10px;
+//   }
+
+//   .contact__link {
+//     display: flex;
+//     align-items: center;
+//     color: var(--gray-text);
+//     text-decoration: none;
+
+//     font-weight: var(--link-weight);
+//     font-size: 12px;
+//     line-height: 1.16;
+//     letter-spacing: 0.02em;
+
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   .icon-head-mail {
+//     width: 14px;
+//     height: 10px;
+//     margin-right: 8px;
+//     fill: currentColor;
+//   }
+
+//   .icon-head-tel {
+//     width: 10px;
+//     height: 14px;
+//     margin-right: 8px;
+//     fill: currentColor;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .top {
+//     display: flex;
+//     max-height: 80px;
+
+//     & .contact:last-child {
+//       margin-left: auto;
+//       padding-top: 32px;
+//       padding-bottom: 32px;
+//     }
+//   }
+//   .border-top {
+//     border-bottom: 1px solid #ececec;
+//     border-bottom-width: 100%;
+//   }
+//   .navigation {
+//     display: flex;
+//   }
+//   .navigation__list {
+//     display: flex;
+//   }
+
+//   /* навигация по сайту */
+//   .navigation__link--menu {
+//     display: none;
+//   }
+//   .navigation__items {
+//     position: relative;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     .navigation__list &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+
+//   .navigation__link {
+//     color: var(--main-color);
+//     text-decoration: none;
+
+//     font-weight: var(--link-weight);
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     padding-bottom: 32px;
+//     padding-top: 32px;
+
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     .navigation &:hover,
+//     .navigation &:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+
+//   /* контактная информация хедер*/
+
+//   .contact {
+//     display: flex;
+//     align-items: center;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     & .contact__items:not(:last-child) {
+//       margin-right: 45px;
+//     }
+//     & .contact__link:hover,
+//     & .contact__link:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+
+//   .contact__link {
+//     display: flex;
+//     align-items: center;
+//     color: var(--gray-text);
+//     text-decoration: none;
+
+//     font-weight: var(--link-weight);
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   .icon-head-mail {
+//     width: 16px;
+//     height: 12px;
+//     margin-right: 10px;
+//     fill: currentColor;
+//   }
+
+//   .icon-head-tel {
+//     width: 10px;
+//     height: 16px;
+//     margin-right: 10px;
+//     fill: currentColor;
+//   }
+// }
 
 // ==========================================================================================================================================================================

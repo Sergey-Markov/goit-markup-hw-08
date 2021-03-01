@@ -8,17 +8,13 @@
 }
 .logo--header {
   color: var(--black-color-logo);
-  .navigation &:first-child {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .logo--header {
     .navigation &:first-child {
-      padding-top: 26px;
-      padding-bottom: 26px;
+      // padding-top: 26px;
+      // padding-bottom: 26px;
       margin-right: 88px;
     }
   }
@@ -30,8 +26,8 @@
   }
   .logo--header {
     .navigation &:first-child {
-      padding-top: 24px;
-      padding-bottom: 25px;
+      // padding-top: 24px;
+      // padding-bottom: 25px;
       margin-right: 93px;
     }
   }
