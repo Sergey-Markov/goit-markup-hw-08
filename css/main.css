@@ -613,7 +613,7 @@ body {
     height: 600px;
   }
   .hero__bg-img {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-img/hero-tablet-fone@1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop-fone@1x.jpg");
   }
   .hero__title {
     font-size: 44px;
