@@ -772,6 +772,12 @@ body {
 }
 
 /* ==================================workspace=================================== */
+@media screen and (max-width: 1200px) {
+  .workspace {
+    display: none;
+  }
+}
+
 .workspace {
   padding-bottom: 94px;
 }
