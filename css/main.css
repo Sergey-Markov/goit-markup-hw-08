@@ -826,44 +826,52 @@ body {
 }
 
 /* ==================наша команда=======================*/
+.ourcomand {
+  background-color: var(--ourcomand-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourcomand__title {
+  font-weight: var(--bold-weight);
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.17px;
+  margin-bottom: 30px;
+}
+
 .ourcomand__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.ourcomand__list .ourcomand__items:not(:last-child) {
-  margin-right: 30px;
-}
-
-.ourcomand {
-  background-color: var(--ourcomand-bgc);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 100%;
-}
-
-.ourcomand__title {
-  margin-bottom: 50px;
-  font-weight: var(--bold-weight);
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
 .ourcomand__items {
-  width: 270px;
+  max-width: 450px;
+  max-height: 622px;
   border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--main-bg-color);
 }
 
+.ourcomand__list .ourcomand__items:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.ourcomand__img {
+  width: 450px;
+  height: 460px;
+}
+
 .ourcomand__alltext {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-top: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 122px;
+  padding-left: 122px;
 }
 
 .ourcomand__name {
@@ -879,6 +887,110 @@ body {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .ourcomand {
+    width: 768px;
+  }
+  .ourcomand__title {
+    font-weight: var(--bold-weight);
+    text-align: center;
+  }
+  .ourcomand__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ourcomand__items {
+    max-width: 354px;
+    max-height: 536px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-bg-color);
+  }
+  .ourcomand__img {
+    display: block;
+    width: 354px;
+    height: 374px;
+  }
+  .ourcomand__alltext {
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+  .ourcomand__name {
+    font-weight: var(--link-weight);
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+  .ourcomand__specialization {
+    color: var(--gray-text);
+    font-weight: var(--normal-weight);
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ourcomand {
+    background-color: var(--ourcomand-bgc);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    min-width: 1200px;
+  }
+  .ourcomand__title {
+    margin-bottom: 50px;
+    font-weight: var(--bold-weight);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
+  .ourcomand__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ourcomand__items {
+    width: 270px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-bg-color);
+  }
+  .ourcomand__list .ourcomand__items:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .ourcomand__img {
+    display: inline-block;
+    width: 270px;
+    height: 260px;
+  }
+  .ourcomand__alltext {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .ourcomand__name {
+    font-weight: var(--link-weight);
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+  .ourcomand__specialization {
+    color: var(--gray-text);
+    font-weight: var(--normal-weight);
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+  }
 }
 
 /*======================================= Наши клиенты======================== */
