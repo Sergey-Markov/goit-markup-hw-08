@@ -527,7 +527,7 @@ body {
 
 .filters__list {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   justify-content: center;
 }
 
@@ -560,21 +560,10 @@ body {
 .examples {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .examples__items {
   border: 1px solid #eeeeee;
-  width: 370px;
-  height: 404px;
-  margin-bottom: 30px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-
-.examples .examples__items:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .examples__link {
@@ -597,7 +586,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
   height: 100%;
   width: 100%;
   font-style: normal;
@@ -614,11 +602,6 @@ body {
 .examples__link:hover .examples__text,
 .examples__link:focus .examples__text {
   transform: translateY(0);
-}
-
-.examples__label {
-  padding: 20px 24px;
-  width: 370px;
 }
 
 .examples__h {
@@ -641,10 +624,86 @@ body {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .filters__list {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .filters__list .filters__items:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+  .examples__items {
+    width: 450px;
+    height: 404px;
+  }
+  .examples__items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .examples__text {
+    padding: 77px 24px;
+  }
+  .examples__label {
+    padding: 20px 24px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filters__list {
+    margin-bottom: 30px;
+  }
+  .examples {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .examples__items {
+    width: 354px;
+    height: 440px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .examples__items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .examples__text {
+    padding: 49px 24px;
+  }
+  .examples__label {
+    padding: 20px 24px;
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .filters-and-examples {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .filters__list {
+    margin-bottom: 50px;
+  }
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .examples__items {
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .examples .examples__items:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .examples__text {
+    padding: 63px 24px;
+  }
+  .examples__label {
+    padding: 20px 24px;
+    width: 370px;
   }
 }
 
