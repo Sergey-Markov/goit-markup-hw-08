@@ -1114,7 +1114,8 @@ body {
 /* ========================================footer =========================================*/
 .footer {
   background-color: var(--footer-bgc);
-  min-width: 320px;
+  min-width: 480px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 60px;
