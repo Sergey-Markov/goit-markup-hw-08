@@ -121,27 +121,11 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: var(--bold-weight);
   font-size: 24px;
-  line-height: 1.16;
+  line-height: 1.17;
 }
 
 .logo--header {
   color: var(--black-color-logo);
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .navigation .logo--header:first-child {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  .navigation .logo--header:first-child {
-    margin-right: 93px;
-  }
 }
 
 .logo--footer {
@@ -155,19 +139,16 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .logo--footer {
-    color: var(--white-text);
-    display: inline-block;
-    margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .logo--footer {
-    color: var(--white-text);
-    display: inline-block;
-    margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    margin-right: 93px;
   }
 }
 
@@ -380,7 +361,7 @@ body {
   .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
   /* навигация по сайту */
   .navigation__link--menu {
