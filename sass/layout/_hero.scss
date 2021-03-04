@@ -1,6 +1,7 @@
 .hero {
   background-color: var(--hero-bgc);
   width: 100%;
+  min-width: 480px;
   text-align: center;
 
   &__bg-img {
