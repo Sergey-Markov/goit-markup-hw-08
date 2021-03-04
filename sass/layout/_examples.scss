@@ -1,6 +1,6 @@
 .filters-and-examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .filters__list {
   display: flex;
@@ -122,4 +122,18 @@
 
 .current {
   color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .filters__list {
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .filters-and-examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

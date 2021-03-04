@@ -521,8 +521,8 @@ body {
 }
 
 .filters-and-examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filters__list {
@@ -639,6 +639,13 @@ body {
 
 .current {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .filters-and-examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* ========================================footer =========================================*/
