@@ -7,7 +7,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  /* box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -16,8 +16,8 @@
 .modal {
   position: absolute;
   display: block;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
 
@@ -37,10 +37,10 @@
   height: 30px;
   cursor: pointer;
 
-  padding-right: 10px;
-  padding-top: 9px;
-  padding-left: 9px;
-  padding-bottom: 10px;
+  padding-right: 6px;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
 
   fill: #000000;
   background-color: var(--main-bg-color);
@@ -65,7 +65,7 @@
   font-style: normal;
   font-weight: var(--bold-weight);
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -85,7 +85,7 @@
   color: var(--gray-text);
 }
 .form-field__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   margin-bottom: 10px;
@@ -118,7 +118,7 @@
 
 .form-field__comments-input {
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -141,7 +141,7 @@
     font-style: normal;
     font-weight: var(--normal-weight);
     font-size: 14px;
-    line-height: 1.33;
+    line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
@@ -182,14 +182,14 @@
   align-items: center;
   font-style: normal;
   font-weight: var(--normal-weight);
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
 
   color: var(--gray-text);
 
   &::before {
     display: inline-block;
-    margin-right: 7px;
+    margin-right: 8px;
     content: "";
     width: 16px;
     height: 15px;
@@ -209,7 +209,7 @@
   }
 }
 .forms-agreement-link {
-  margin-left: 4px;
+  margin-left: 3px;
   color: var(--accent-color);
 }
 
@@ -218,4 +218,48 @@
   opacity: 0;
   pointer-events: none;
   transform: scale(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &__closes-btn {
+      padding-right: 10px;
+      padding-top: 9px;
+      padding-left: 9px;
+      padding-bottom: 10px;
+    }
+  }
+  .form-field {
+    &__text {
+      line-height: 1.15;
+    }
+    &__input {
+      width: 448px;
+    }
+    &__comments-input {
+      width: 448px;
+      height: 120px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        line-height: 1.33;
+      }
+    }
+  }
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+
+    &::before {
+      margin-right: 7px;
+    }
+  }
+  .forms-agreement-link {
+    margin-left: 4px;
+    color: var(--accent-color);
+  }
 }
