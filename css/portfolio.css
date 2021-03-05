@@ -561,17 +561,16 @@ body {
 
 .examples__items {
   border: 1px solid #eeeeee;
-}
-
-.examples__link {
-  display: block;
-  text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples__link:hover, .examples__link:focus {
+.examples__items:hover, .examples__items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.examples__link {
+  text-decoration: none;
 }
 
 .examples__overlay {
