@@ -150,6 +150,7 @@ body {
 .social-icons__list {
   display: flex;
   justify-content: space-between;
+  width: 206px;
 }
 
 .social-icons__link {
@@ -841,11 +842,11 @@ body {
 }
 
 .ourcomand__alltext {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 24px;
   padding-top: 30px;
-  padding-right: 122px;
-  padding-left: 122px;
 }
 
 .ourcomand__name {
