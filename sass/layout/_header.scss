@@ -48,6 +48,7 @@
     height: 100vh;
     min-width: 100%;
     min-height: 100%;
+    z-index: 3;
     overflow-y: scroll;
 
     top: 0;
@@ -83,9 +84,15 @@
       width: 40px;
       height: 40px;
     }
+    // .mobile-menu__between {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    // }
     &__navigation {
-      margin-bottom: 302px;
+      margin-bottom: 38vh;
     }
+
     &__navigation-items {
       &:not(:last-child) {
         margin-bottom: 32px;

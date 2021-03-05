@@ -237,6 +237,7 @@ body {
     height: 100vh;
     min-width: 100%;
     min-height: 100%;
+    z-index: 3;
     overflow-y: scroll;
     top: 0;
     left: 0;
@@ -267,7 +268,7 @@ body {
     height: 40px;
   }
   .mobile-menu__navigation {
-    margin-bottom: 302px;
+    margin-bottom: 38vh;
   }
   .mobile-menu__navigation-items:not(:last-child) {
     margin-bottom: 32px;
