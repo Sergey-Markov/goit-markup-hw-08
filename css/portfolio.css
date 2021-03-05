@@ -522,7 +522,7 @@ body {
 .filters-and-examples {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  width: 100%;
 }
 
 .filters__list {
@@ -560,6 +560,7 @@ body {
 .examples {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .examples__items {
@@ -631,10 +632,6 @@ body {
   .filters__list .filters__items:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
-  .examples__items {
-    width: 450px;
-    height: 404px;
-  }
   .examples__items:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -643,7 +640,6 @@ body {
   }
   .examples__label {
     padding: 20px 24px;
-    width: 450px;
   }
 }
 
