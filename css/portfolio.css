@@ -560,7 +560,6 @@ body {
 .examples {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .examples__items {
