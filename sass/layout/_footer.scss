@@ -1,7 +1,6 @@
 /* ========================================footer =========================================*/
 .footer {
   background-color: var(--footer-bgc);
-  min-width: 480px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -90,7 +89,9 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
-
+  .footer__form {
+    width: 100%;
+  }
   .footer__feedback {
     display: flex;
     flex-direction: column;
@@ -110,7 +111,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    width: 450px;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
 
@@ -135,7 +136,6 @@
     padding-left: 29px;
     padding-right: 28px;
 
-    width: 200px;
     height: 50px;
 
     font-family: Roboto, sans-serif;
@@ -160,8 +160,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     height: 463px;
-    // padding-left: 85px;
-    // padding-right: 89px;
+
     &--double-box {
       flex-wrap: wrap;
     }
