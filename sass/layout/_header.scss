@@ -80,13 +80,16 @@
       width: 40px;
       height: 40px;
     }
+    &__navigation {
+      margin-bottom: 302px;
+    }
     &__navigation-items {
       &:not(:last-child) {
         margin-bottom: 32px;
       }
-      &:last-child {
-        margin-bottom: 302px;
-      }
+      // &:last-child {
+      //   margin-bottom: 302px;
+      // }
     }
     &__navigation-link {
       color: var(--main-color);

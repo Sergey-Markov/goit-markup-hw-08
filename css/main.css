@@ -262,11 +262,11 @@ body {
     width: 40px;
     height: 40px;
   }
+  .mobile-menu__navigation {
+    margin-bottom: 302px;
+  }
   .mobile-menu__navigation-items:not(:last-child) {
     margin-bottom: 32px;
-  }
-  .mobile-menu__navigation-items:last-child {
-    margin-bottom: 302px;
   }
   .mobile-menu__navigation-link {
     color: var(--main-color);
@@ -555,6 +555,7 @@ body {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
+    height: 400px;
   }
   .hero__bg-img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-img/hero-mob-fone@1x.jpg");
