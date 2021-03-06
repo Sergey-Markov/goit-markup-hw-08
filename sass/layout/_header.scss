@@ -4,9 +4,6 @@
   max-width: 100%;
 }
 
-.current {
-  color: var(--accent-color);
-}
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: none;
@@ -55,7 +52,11 @@
     left: 0;
 
     transform: scale(0);
-    padding: 48px 40px;
+    // padding: 48px 40px;
+    padding-top: 3.428em;
+    padding-bottom: 3.428em;
+    padding-left: 2.857em;
+    padding-right: 1.07em;
     background-color: var(--main-bg-color);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -81,28 +82,27 @@
     }
 
     &__btn-svg {
-      width: 40px;
-      height: 40px;
+      // 40px
+      width: 2.87em;
+      height: 2.87em;
     }
-    // .mobile-menu__between {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: space-between;
-    // }
+
     &__navigation {
       margin-bottom: 38vh;
     }
 
     &__navigation-items {
       &:not(:last-child) {
-        margin-bottom: 32px;
+        // 32px
+        margin-bottom: 2.285em;
       }
     }
     &__navigation-link {
       color: var(--main-color);
       text-decoration: none;
       font-weight: var(--link-weight);
-      font-size: 40px;
+      // 40px
+      font-size: 2.857em;
       line-height: 1.17;
       letter-spacing: 0.02em;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,7 +117,8 @@
     &__contact-tel {
       color: var(--accent-color);
       text-decoration: none;
-      font-size: 34px;
+      // 34px
+      font-size: 2.42em;
       line-height: 1.17;
       letter-spacing: 0.02em;
     }
@@ -125,22 +126,25 @@
       display: block;
       text-decoration: none;
       color: var(--gray-text);
-      font-size: 24px;
+      // 24px
+      font-size: 1.714em;
       line-height: 1.16;
       letter-spacing: 0.02em;
     }
     &__contact-items {
       &:first-child {
-        margin-bottom: 32px;
+        // 32px
+        margin-bottom: 2.285em;
       }
       &:last-child {
-        margin-bottom: 64px;
+        // 64px
+        margin-bottom: 4.571em;
       }
     }
     &__soclist {
       display: flex;
       align-items: center;
-      width: 357px;
+      // width: 357px;
     }
     &__soclist-items {
       display: flex;
@@ -149,9 +153,11 @@
       &:not(:last-child)::after {
         display: block;
         content: "";
-        width: 22px;
+        // 22px
+        width: 1.571em;
         height: 0;
-        padding-right: 10px;
+        // 10px
+        padding-right: 0.714em;
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
       }
@@ -159,10 +165,20 @@
     &__soclink {
       text-decoration: none;
       color: var(--accent-color);
-      font-size: 18px;
+      // 18px
+      font-size: 1.285em;
+      font-weight: 500;
       line-height: 1.22;
       letter-spacing: 0.02em;
     }
+  }
+}
+@media screen and (max-width: 402px) {
+  .mobile-menu__soclink {
+    font-size: 0.9em;
+  }
+  .mobile-menu__contact-tel {
+    font-size: 1.9em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -383,4 +399,7 @@
     margin-right: 10px;
     fill: currentColor;
   }
+}
+.current {
+  color: var(--accent-color);
 }
